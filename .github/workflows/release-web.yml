@@ -130,7 +130,7 @@ jobs:
           echo "ARTIFACTS_URL=$artifacts_url" >> $GITHUB_ENV
 
           # For production environment, use production URL
-          echo "PUBLIC_URL=https://app-asset.onekey-test.com/${{ github.sha }}-${{ env.BUILD_NUMBER }}/" >> $GITHUB_ENV
+          echo "PUBLIC_URL=https://app-assets.onekey.so/${{ github.sha }}-${{ env.BUILD_NUMBER }}/" >> $GITHUB_ENV
 
       - name: Install Dependency
         env:
